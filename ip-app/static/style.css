@@ -120,6 +120,15 @@ button:hover {
     background: #C57B57; /* Pastel-rood */
 }
 
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 /* Responsiviteit */
 @media (max-width: 600px) {
     nav {
