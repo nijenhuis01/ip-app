@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vind IP & Locatie</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Navigatiemenu -->
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/info">Info</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Inhoud container -->
+    <div class="container">
+        <h1>Zoek IP & Locatie</h1>
+        
+        <form method="post">
+            <input type="text" name="ip_or_url" placeholder="Voer IP of URL in" required>
+            <button type="submit">Zoek</button>
+        </form>
+
+        {% if ip_info %}
+            <h2>Resultaat:</h2>
+            <p><strong>IP-adres:</strong> {{ ip_info.ip }}</p>
+            <p><strong>Locatie:</strong> {{ ip_info.locatie }}</p>
+            <p><strong>Internetprovider:</strong> {{ ip_info.provider }}</p>
+        {% endif %}
+    </div>
+
+</body>
+</html>

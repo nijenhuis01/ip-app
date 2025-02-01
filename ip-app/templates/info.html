@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over Ons</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Navigatiemenu -->
+    <nav>
+        <a href="/">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+            </div>
+        </a>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/info">Info</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Inhoud container -->
+    <div class="wide-container">
+        <h1>Over FindIP</h1>
+        
+        <p><strong>FindIP</strong> is een gebruiksvriendelijke tool waarmee je snel en eenvoudig IP-adressen kunt opzoeken en hun locatie kunt achterhalen.</p>
+        
+        <h2>Hoe Werkt Het?</h2>
+        <p>Onze website maakt gebruik van betrouwbare externe databases om IP-adressen te analyseren en locatiegegevens zoals stad, land en internetprovider op te halen.  
+        Wij gebruiken de <a href="https://ipinfo.io/" target="_blank">ipinfo.io</a> API om accurate informatie te bieden.</p>
+
+        <h2>Waarom Deze Website?</h2>
+        <p>FindIP is ontstaan uit de behoefte aan een snelle, gratis en eenvoudige manier om IP-adressen te controleren.  
+        Of je nu een webbeheerder bent, een gamer die serverlocaties wil checken, of gewoon nieuwsgierig bent naar je eigen IP, FindIP helpt je direct.</p>
+
+        <h2>Veelgestelde Vragen (FAQ)</h2>
+
+        <h3>🔹 Wat is een IP-adres?</h3>
+        <p>Een IP-adres (Internet Protocol-adres) is een uniek nummer dat elk apparaat op het internet identificeert.</p>
+
+        <h3>🔹 Kan ik het IP-adres van een website invoeren?</h3>
+        <p>Ja! Je kunt zowel een IP-adres als een domeinnaam (zoals google.com) invoeren en wij zoeken het juiste IP voor je op.</p>
+
+        <h3>🔹 Hoe nauwkeurig is de locatiebepaling?</h3>
+        <p>De nauwkeurigheid hangt af van het type IP-adres en de gebruikte database.  
+        Voor mobiele netwerken kan de locatie minder precies zijn.</p>
+
+        <h3>🔹 Is deze service gratis?</h3>
+        <p>Ja! FindIP is 100% gratis en vereist geen registratie.</p>
+
+        <h3>🔹 Kan ik mijn eigen IP-adres verbergen?</h3>
+        <p>Ja, dit kan met een VPN of proxy. Deze services maskeren je echte IP en tonen een ander IP.</p>
+
+        <h2>Over Ons</h2>
+        <p>FindIP is ontwikkeld door een team van enthousiaste programmeurs en cybersecurity-experts.  
+        Ons doel is om internetgebruikers beter bewust te maken van hun online identiteit en veiligheid.</p>
+    </div>
+
+</body>
+</html>

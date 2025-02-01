@@ -1,0 +1,144 @@
+/* Algemene stijl */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #F7E6C4; /* Zachte pastel-geel */
+    margin: 0;
+    padding-top: 80px; /* Ruimte voor menu */
+}
+
+/* Navigatiemenu */
+nav {
+    background-color: #B0D9B1; /* Zacht pastelgroen */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo img {
+    height: 75px;
+}
+
+/* Menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 25px;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5B9279; /* Pastel-donker groen */
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #F4A259; /* Zacht pastel-oranje */
+}
+
+/* Container */
+.container {
+    background: white;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    max-width: 400px;
+    width: 100%;
+}
+
+.wide-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    max-width: 800px; /* Grotere breedte voor tekstpagina's */
+    width: 90%;
+    margin: auto;
+    text-align: left;
+}
+
+/* Kopteksten */
+h1 {
+    color: #5B9279; /* Pastel-donker groen */
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #C57B57; /* Zacht pastel-rood */
+    margin-top: 15px;
+}
+
+/* Resultaten */
+p {
+    font-size: 18px;
+    color: #6B4226; /* Warm pastel-bruin */
+}
+
+/* Formulier */
+input {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    border: 2px solid #B0D9B1; /* Pastelgroen */
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #F4A259; /* Pastel-oranje */
+}
+
+/* Knop */
+button {
+    padding: 10px 15px;
+    border: none;
+    background: #5B9279; /* Pastel-donker groen */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #C57B57; /* Pastel-rood */
+}
+
+/* Responsiviteit */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+}

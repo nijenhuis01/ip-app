@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Navigatiemenu -->
+    <nav>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+        </div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/info">Info</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Inhoud container -->
+    <div class="wide-container">
+        <h1>Contacteer Ons</h1>
+        <p>Wij horen graag van je! Of je nu vragen hebt over onze diensten, feedback wilt geven, of technische ondersteuning nodig hebt, neem gerust contact op.</p>
+
+        <p><strong>Email:</strong> <a href="mailto:support@findip.nl">support@findip.nl</a></p>
+        
+        <h2>Neem Contact Op via het Formulier</h2>
+        <p>Heb je een vraag of opmerking? Vul onderstaand formulier in en wij nemen zo snel mogelijk contact met je op!</p>
+
+        <!-- Contactformulier -->
+        <form action="#" method="POST">
+            <div>
+                <label for="name">Naam:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Bericht:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Verstuur</button>
+        </form>
+
+        <p>Door het formulier in te vullen, ga je akkoord met onze <a href="/privacy">privacyverklaring</a>.</p>
+    </div>
+
+</body>
+</html>
