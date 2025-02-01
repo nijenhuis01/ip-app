@@ -6,7 +6,7 @@
     <title>Vind IP & Locatie</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body>
+<body class="{% if request.path == '/' %}no-scroll{% endif %}">
 
     <!-- Navigatiemenu -->
     <nav>
@@ -38,6 +38,7 @@
             <p><strong>Internetprovider:</strong> {{ ip_info.provider }}</p>
         {% endif %}
     </div>
+
     <footer>
         &copy; 2025 Zoek IP | Versie 0.13 BETA
     </footer>

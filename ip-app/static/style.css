@@ -9,14 +9,18 @@ body {
     flex-direction: column; /* Zorgt ervoor dat de inhoud gestapeld blijft */
     justify-content: center;
     align-items: center;
-    padding-top: 80px; /* Laat ruimte voor de navbar als die vast staat */
+    padding-top: 100px; /* Laat ruimte voor de navbar als die vast staat */
     background-image: url("/static/background.png"); /* Gebruik een absolute URL als het in een extern CSS-bestand staat */
     background-size: cover; /* Laat de afbeelding de hele pagina vullen */
     background-position: center; /* Centreert de afbeelding */
     background-repeat: no-repeat; /* Voorkomt herhaling */
     background-attachment: fixed; /* Laat de achtergrond vaststaan bij scrollen */
 }
-
+/* Scroll blokkeren alleen op de homepage */
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
 
 
 nav {
@@ -64,7 +68,7 @@ nav ul li a:hover {
 .container {
     background: white;
     padding: 20px;
-    margin-top: 0;
+    margin-top: -400px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: inline-block;
