@@ -2,14 +2,21 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #F7E6C4; 
+    background-color: rgba(247, 230, 196, 0.8); /* Maakt het semi-transparant */
     margin: 0;
-    display: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Zorgt ervoor dat de inhoud gestapeld blijft */
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding-top: 80px; 
+    padding-top: 80px; /* Laat ruimte voor de navbar als die vast staat */
+    background-image: url("/static/background.png"); /* Gebruik een absolute URL als het in een extern CSS-bestand staat */
+    background-size: cover; /* Laat de afbeelding de hele pagina vullen */
+    background-position: center; /* Centreert de afbeelding */
+    background-repeat: no-repeat; /* Voorkomt herhaling */
+    background-attachment: fixed; /* Laat de achtergrond vaststaan bij scrollen */
 }
+
 
 
 nav {
@@ -57,7 +64,7 @@ nav ul li a:hover {
 .container {
     background: white;
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 0;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: inline-block;
