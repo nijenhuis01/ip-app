@@ -1,9 +1,10 @@
 # VERSIONS.md
 
-## Versie 0.14 BETA - 01-02-2025
+## Versie 0.13 BETA - 01-02-2025
 ### Nieuwe functies
-- Beschrijf hier de nieuwe functies die zijn toegevoegd.
-- Bijvoorbeeld: Ondersteuning voor nieuwe API-integraties.
+- Add Footer and Copyright
+- Custom funds
+- Improve Menu
 
 ### Verbeteringen
 - Verbeterde prestaties bij het laden van gegevens.
@@ -17,7 +18,7 @@
 
 ## Toekomstige updates
 
-### Versie 0.15 BETA (Gepland)
+### Versie 0.14 BETA (Gepland)
 - Nieuwe feature X toevoegen.
 - Verbetering van de backend-prestaties.
 
