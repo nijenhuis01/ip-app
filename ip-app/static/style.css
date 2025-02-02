@@ -37,7 +37,9 @@ nav {
 
 
 .logo img {
-    height: 75px;
+    height: 175px;
+    position: absolute;
+    top: -20px;
 }
 
 
@@ -56,8 +58,9 @@ nav ul li a {
     text-decoration: none;
     color: #5B9279; 
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     transition: 0.3s;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav ul li a:hover {
@@ -145,6 +148,10 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.privacy-page {
+    padding-top: 180x; /* Pas dit aan naar wens */
 }
 
 
