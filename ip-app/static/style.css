@@ -147,6 +147,10 @@ footer {
     width: 100%;
 }
 
+.privacy-page {
+    padding-top: 180x; /* Pas dit aan naar wens */
+}
+
 
 @media (max-width: 600px) {
     nav {
